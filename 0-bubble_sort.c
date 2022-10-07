@@ -5,13 +5,14 @@
  *
  * @array: The array to be printed.
  * @size: number of elements in array.
+ * Return: void
  */
 
 swap ( int *xp, int *yp)
 {
-    int temp = *xp;
+    int tmp = *xp;
     *xp = *yp;
-    *yp = temp;
+    *yp = tmp;
 }
 
 void bubble_sort(int *array, size_t size)
