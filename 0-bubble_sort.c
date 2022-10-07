@@ -14,7 +14,7 @@ void bubble_sort(int *array, size_t size)
 size_t i;
 int tmp, sorted;
 
-if (array || size < 2)
+if (!array || size < 2)
 return;
 
 do {
