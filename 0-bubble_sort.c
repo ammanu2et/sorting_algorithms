@@ -31,5 +31,5 @@ print_array(array, size);
 }
 }
 
-} while (sorted == 0);
+} while(sorted == 0);
 }
