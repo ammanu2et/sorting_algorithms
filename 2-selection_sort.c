@@ -10,21 +10,21 @@
 
 void selection_sort(int *array, size_t size)
 {
-    size_t i, sorted, min_idx;
+    size_t i, step, min_idx;
     int tmp;
 
-    for (i = 0; i < size - 1; i++)
+    for (step = 0; step < size - 1; step++)
     {
-        min_idx = i;
-        for (sorted = i + 1; sorted < size; sorted++)
+        min_idx = step;
+        for (i = step + 1; i < size; i++)
         {
-            if (array[sorted] < array[min_idx])
-                min_idx = sorted;
+            if (array[i] < array[min_idx])
+                min_idx = i;
         }
-        if (min_idx != i)
+        if (min_idx != step)
         {
-            tmp = array[i];
-            array[i] = array[min_idx];
+            tmp = array[step];
+            array[step] = array[min_idx];
             array[min_idx] = tmp;
             print_array(array, size);
         }
