@@ -2,7 +2,9 @@
 
 /**
  * selection_sort - sort a given elements using selection sort algorithm.
+ *
  * @size: size of element
+ * @array: the array element
  * Return: void
  */
 
