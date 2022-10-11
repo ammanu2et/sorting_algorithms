@@ -1,4 +1,4 @@
-#include 'sort.h'
+#include "sort.h"
 
 /**
  * quick_sort_sub - sort a sub array by using quick sort algorithm
