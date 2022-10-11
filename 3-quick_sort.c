@@ -17,7 +17,7 @@ void quick_sort_sub(int *array, size_t low, size_t high, size_t size)
         return;
 
     pivot = array[high];
-    i = low
+    i = low;
 
     for (j = low; j < high; j++)
     {
@@ -33,6 +33,7 @@ void quick_sort_sub(int *array, size_t low, size_t high, size_t size)
             i++;
         }
     }
+
     if (i != high)
     {
         tmp = array[i];
